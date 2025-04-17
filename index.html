@@ -23,189 +23,176 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
+                    <h1>Модули в JS</h1>
                     <img
                         class="r-stretch"
-                        src="https://goqr.me/"
+                        src="https://ktkv-presentations.github.io/uidev-13"
                         data-type="qrcode" />
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <section>
+                        <h1>Модуль</h1>
+                        <p>
+                            функции, классы, переменные и другие элементы,
+                            которые можно использовать в других частях
+                            приложения
+                        </p>
+                        <hr />
+                        <code>import</code>
+                        <pre><code data-trim class="js">
+import { add, subtract } from './math.js';
+console.log(add(2, 3)); // 5
+console.log(subtract(5, 3)); // 2
+                                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>
+                            Система модулей
+                            <code>CommonJS</code>
+                        </h1>
+                        <p>система модулей, используемая в Node.js</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4>Экспорт</h4>
+                                <pre><code data-trim class="js">
+module.exports = function add(a, b) {
+  return a + b;
+};
+                                </code></pre>
+                            </div>
+                            <div class="border-b">
+                                <h4>Импорт</h4>
+                                <pre><code data-trim class="js">
+const add = require('./export');
+console.log(add(2, 3));
+                                </code></pre>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Синхронное выполнение</b>
+                            - каждый модуль загружается и выполняется при его
+                            первом требовании
+                        </p>
+                    </section>
+                    <section>
+                        <h1>
+                            Система модулей
+                            <code>ES модули</code>
+                        </h1>
+                        <p>система модулей, введённая в спецификацию ES6</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4>Экспорт</h4>
+                                <pre><code data-trim class="js">
+export function add(a, b) {
+  return a + b;
+}
+                                </code></pre>
+                            </div>
+                            <div class="border-b">
+                                <h4>Импорт</h4>
+                                <pre><code data-trim class="js">
+import { add } from './export.js';
+console.log(add(2, 3)); // 5
+                                </code></pre>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Асинхронное выполнение</b>
+                            - позволяет импортировать модуль вверху файла, а
+                            импорт происходит в момент когда собирается пакет
+                            приложения
+                        </p>
+                    </section>
+                    <section>
+                        <h1>
+                            <code>export</code>
+                            vs
+                            <code>export default</code>
+                        </h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4>
+                                    Именованный экспорт
+                                    <code>export</code>
+                                </h4>
+                                <p>
+                                    Позволяет экспортировать несколько сущностей
+                                    из одного модуля
+                                </p>
+                                <pre><code data-trim class="js">
+export const PI = 3.14;
+export function add(a, b) {
+  return a + b;
+}
+                                </code></pre>
+                                <pre><code data-trim class="js">
+import { PI, add } from './math.js';
+                            </code></pre>
+                            </div>
+                            <div class="border-b">
+                                <h4>
+                                    Экспорт по умолчанию
+                                    <code>export default</code>
+                                </h4>
+                                <p>
+                                    Позволяет экспортировать только одну
+                                    сущность по умолчанию
+                                </p>
+                                <pre><code data-trim class="js">
+export default function log(msg) {
+  console.log(msg);
+}
+                                </code></pre>
+                                <pre><code data-trim class="js">
+import log from './logger.js'; // имя может быть любым
+log('Привет!');
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Пакетный менеджер</h1>
+                        <p>
+                            инструмент, который помогает разработчику
+                            устанавливать, обновлять и управлять внешними
+                            библиотеками
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Node Package Manager (NPM)</h1>
+                        <p>
+                            пакетный менеджер для
+                            <code>Node.js</code>
+                        </p>
+                        <em>
+                            Позволяет управлять не только серверными пакетами,
+                            но и фронтенд-зависимостями
+                        </em>
+                    </section>
+                    <section>
+                        <h1>
+                            <code>npm</code>
+                            в экосистеме JavaScript
+                        </h1>
+                        <ul>
+                            <li>
+                                Устанавливает пакеты (библиотеки) и их зависимости.
+                            </li>
+                            <li>
+                                Обновляет пакеты до новых версий.
+                            </li>
+                            <li>
+                                Следит за связями между библиотеками.
+                            </li>
+                            <li>
+                                Создаёт и обновляет файл package.json
+                            </li>
+                        </ul>
+                        <h4><code>package.json</code></h4>
+                    </section>
                 </section>
             </div>
         </div>
@@ -396,4 +383,3 @@ var foo = {
         </script>
     </body>
 </html>
-
